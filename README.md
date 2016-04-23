@@ -227,9 +227,9 @@
     });
   ```
 
-### A little bit of abstraction
+### But we aren't adding content, weight and width... we are adding an item with those attributes...
 
-1. Instead of pushing an object with a bunch of attributes in `$scope`, push `newItem`, and clear form by setting `$scope.item = {}`
+1. Instead of pushing an object with a bunch of attributes in `$scope`, push `$scope.newItem`, and clear form by setting `$scope.newItem = {}`
 1. In the form, change the `ng-model` in each to be an attribute of `newItem`, like:
 
   ```html

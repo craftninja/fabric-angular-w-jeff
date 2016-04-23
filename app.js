@@ -16,8 +16,8 @@ angular.module('fabrik', []) // <-- second argument, you _define_ module / insta
     $scope.inventory = [];
 
     $scope.onSubmit = function () { // like defining a rails controller action
-      $scope.inventory.push(newItem);
-      $scope.item = {};
+      $scope.inventory.push($scope.newItem);
+      $scope.newItem = {};
     }
 
     $scope.deleteSelected = function(){
