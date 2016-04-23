@@ -1,0 +1,17 @@
+[
+  {
+    "content": "wool",
+    "weight": "voile",
+    "width": 44
+  },
+  {
+    "content": "silk",
+    "weight": "canvas",
+    "width": 55
+  },
+  {
+    "content": "cotton",
+    "weight": "quilting",
+    "width": 60
+  }
+]

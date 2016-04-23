@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="fabrik">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="/app.js"> </script>
+  </head>
+  <body>
+    <div ng-controller="InventoryController">
+      <form ng-submit="onSubmit()">
+        <p>
+          <label for="content">
+            Content
+            <input type="text" id="content" ng-model="newItem.content">
+          </label>
+        </p>
+        <p>
+          <label for="weight">
+            Weight
+            <input type="text" id="weight" ng-model="newItem.weight">
+          </label>
+        </p>
+        <p>
+          <label for="width">
+            Width
+            <input type="text" id="width" ng-model="newItem.width">
+          </label>
+        </p>
+        <p>
+          <input type="submit" name="name" value="Save it">
+        </p>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Content</th>
+            <th>Weight</th>
+            <th>Width</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in inventory">
+            <td><input type="checkbox" name="name" ng-value="$index" ng-click="itemSelected($event, item)"></td>
+            <td>{{item.content}}</td>
+            <td>{{item.weight}}</td>
+            <td>{{item.width}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="button" value="Delete Selected" ng-click="deleteSelected()">
+    </div>
+  </body>
+</html>
