@@ -7,7 +7,7 @@
 1. Make dir, git init, touch index and app
 1. html-ify index, add angular cdn and ng-app to html tag
 1. add `{{1+2}}` to make sure things are wired up correctly
-1. install http-server globally if you don't have it: `$ npm intall -g http-server`
+1. install http-server globally if you don't have it: `$ npm install -g http-server`
 1. `$ npm init -y` - installs package.json, but says yes to all the prompts
 1. in `package.json`, change `test` script to `start` script:
   * `http-server -c-1 -o`
